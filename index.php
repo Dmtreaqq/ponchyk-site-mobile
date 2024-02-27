@@ -1,0 +1,432 @@
+<?php include("_config.php"); ?>
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <?php echo  !empty($meta['meta_t']) ? $meta['meta_t'] : 'Пончики! Машинка для випікання пончиків' ?>
+    </title>
+    <meta name="description"
+        content="<?php echo  !empty($meta['meta_d']) ? $meta['meta_d'] : 'Машинка для випікання пончиків доставкою по всій Україні.' ?>">
+    <meta name="keywords"
+        content="<?php echo  !empty($meta['meta_k']) ? $meta['meta_k'] : 'купити машинка для випікання пончиків донат машина, ціна машинка для пончиків, замовити машинку для пончиків, машинка для пончиків інтернет магазин' ?>">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script>
+    var url = new URL(window.location.href);
+    var pixel = url.searchParams.get('pixel');
+    var tiktok = url.searchParams.get('tiktok');
+    var gtmId = url.searchParams.get('gtm');
+
+    if (pixel) {
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', pixel);
+      fbq('track', 'PageView');
+    }
+    if (tiktok) {
+      (function() {
+        var ta = document.createElement('script');
+        ta.type = 'text/javascript';
+        ta.async = true;
+        ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=' + tiktok;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ta, s);
+      })();
+    }
+    if (gtmId) {
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', gtmId)
+    }
+</script>
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '748270740153899');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=748270740153899&ev=PageView&noscript=1"
+/></noscript>
+</head>
+
+<body>
+    <!--main_wrapper-->
+    <div class="main_wrapper">
+    <header class="active">
+            <div class="header-top">
+                <img height="450" src="img/header.png" alt="Пекти пончики легко">
+            </div>
+            
+
+        </header>
+        <!-- header 3 -->
+        <!-- video -->
+        <section class="video_section">
+        <h2 class="title">
+                <div class="text">Огляд машинки</div>
+            </h2>
+        <div id="video" class="video_block">
+            <div class="youtube" id="safUSRTAIBI"><img src="img/play-1.png" alt="Машинка для випікання пончиків"
+                    title="Машинка для випікання пончиків"></div>
+        </div>
+        <h2 class="title">
+                <div class="text">Приготування пончиків</div>
+            </h2>
+        <div id="video" class="video_block">
+            <div class="youtube" id="eeo0WzCJdsg"><img src="img/play-2.png" alt="Машинка для випікання пончиків"
+                    title="Машинка для випікання пончиків"></div>
+        </div>
+        <h2 class="title">
+                <div class="text">Пончики як у Сімпсонах!</div>
+            </h2>
+        <div id="video" class="video_block">
+            <div class="youtube" id="PDqueC5BzIw"><img src="img/play-3.png" alt="Машинка для випікання пончиків"
+                    title="Машинка для випікання пончиків"></div>
+        </div>
+        </section>
+        <!-- /video -->
+        <div id="home" class="offer_section offer3 offer_section-top tabs-content active" data-tab-id="home"
+            style=" margin: 0; ">
+            <div class="image_block">
+                <div class="box-title header-box-title">
+                    <div class="text">Машинка для випікання пончиків</div>
+                </div>
+                <img class="offer_image" src="img/img10.jpg" alt="Машинка для випікання пончиків">
+                <div class="discount_block">
+                    <div class="value">-
+                        <?php echo  $sale?>%
+                    </div>
+                    <div class="text">знижка</div>
+                </div>
+            </div>
+            <div class="timer_block clearfix">
+                <p>Ця пропозиція закінчиться через:</p>
+                <div class="timer clearfix">
+                    <div class="timer_item">
+                        <div class="text">годин</div>
+                        <div class="count hours"></div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="text">хвилин</div>
+                        <div class="count minutes"></div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="text">секунд</div>
+                        <div class="count seconds"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-block">
+                <div class="price-and-sale-block">
+                    <div class="price-and-sale-block-top">
+                        <div class="old-price"><?php echo  $price_old?> <?php echo  $currency?></div>
+                        <div class="sale-block">-<?php echo  $sale?>%</div>
+                    </div>
+                    <div class="price-and-sale-block-bottom">
+                        <div class="price-new"><?php echo  $landing_price?> <?php echo  $currency?></div>
+                    </div>
+                </div>
+                <a href="#order_form" class="button-bottom">Купити</a>
+            </div>
+            <div class="price_block clearfix">
+                <div class="price_item old">
+                    <div class="text">Звичайна ціна:</div>
+                    <div class="value">
+                        <?php echo  $price_old?>
+                        <?php echo  $currency?>
+                    </div>
+                </div>
+                <div class="price_item new">
+                    <div class="text"><span>Ви заощаджуєте -
+                            <?php echo  $sale?>%
+                        </span></div>
+                    <div class="value">
+                        <?php echo  $landing_price?>
+                        <?php echo  $currency?>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>Приготування до 7 пончиків одночасно</li>
+                <li>Антипригарна поверхня для випікання</li>
+                <li>Індикатор готовності</li>
+                <li>Легко миється</li>
+                <li>Зручна у використанні</li>
+                <li>Прогумовані ніжки</li>
+                <li>Безпечні та довговічні матеріали</li>
+            </ul>
+            <div class="btn-block">
+                <a href="#order_form" class="button">Придбати зараз</a>
+            </div>
+            <div class="products_count">* залишилось <b id="countLeft" style="background-color: rgba(247,147,29, 0.62);">18</b> шт за акцією</div>
+        </div>
+        <!-- /header 3 -->
+        <!-- /header 3 -->
+        <!--description_section-->
+        <section id="description" class="description_section tabs-content" data-tab-id="description">
+            <h2 class="title">
+                <div class="text">Машинка для випікання пончиків</div>
+            </h2>
+            <div class="text_block">
+                <p>Машинка для випікання пончиків - подарує любителям десертів, без зайвих витрат часу, можливість
+                    насолоджуватися улюбленими ласощами.</p>
+                <p>Апарат дає змогу випікати до 7 пончиків одночасно. Форми з антипригарним покриттям робочих поверхонь
+                    виключають прилипання пончиків.</p>
+                <img src="img/image_1.jpg" alt="Машинка для випікання пончиків">
+            </div>
+            <div class="text_block">
+                <p>Корпус виготовлено з термостійкого пластику.</p>
+                <p>Стан процесу та включення в мережу контролюється за допомогою простих індикаторних ламп.</p>
+                <img src="img/image_2.jpg" alt="Машинка для випікання пончиків">
+            </div>
+            <div class="text_block">
+                <p>Ніжки апарата прогумовані, що унеможливлює ковзання по робочій поверхні столу.</p>
+                <p>Є захист від перегріву. Підключається до звичайної розетки 220 Вт.</p>
+                <img src="img/image_3.jpg" alt="Машинка для випікання пончиків">
+            </div>
+            <div class="text_block">
+                <p>Ця кухонна техніка - стане чудовим подарунком мамі, татові, бабусі, дідусеві, коханому, коханій,
+                    дружині, чоловікові, дівчині, подрузі, другу.</p>
+                <img src="img/image_4.jpg" alt="Машинка для випікання пончиків">
+            </div>
+            <div class="btn-block">
+                <a href="#order_form" class="button">Придбати зараз</a>
+            </div>
+            <div class="products_count">* залишилось <b id="countLeft" style="background-color: rgba(247,147,29, 0.62);">18</b> шт за акцією</div>
+        </section>
+        <img src="img/000.jpg" alt="Машинка для випікання пончиків">
+        <section class="characteristic_section">
+        <h2 id="characteristic" class="title">Характеристики</h2>
+        <!--/description_section-->
+        <!--characteristics_list2-->
+        <div class="characteristics_list2">
+            <div class="characteristic_item">
+                <div class="text">Габарити - 255 Х 200 Х 110 мм.</div>
+            </div>
+            <div class="characteristic_item">
+                <div class="text">Вага - 1,6 кг.</div>
+            </div>
+            <div class="characteristic_item">
+                <div class="text">Матеріал корпусу - АБС-пластик</div>
+            </div>
+            <div class="characteristic_item">
+                <div class="text">Внутрішнє покриття - антипригарне покриття</div>
+            </div>
+            <div class="characteristic_item">
+                <div class="text">Потужність пристрою - 1200 Вт.</div>
+            </div>
+            <div class="characteristic_item">
+                <div class="text">Напруга - 220 В.</div>
+            </div>
+        </div>
+        </section>
+    
+        <img src="img/111.jpg" alt="Машинка для випікання пончиків" title="Машинка для випікання пончиків">
+        
+
+        <!--/characteristics_list2-->
+        <!-- reviews 2 -->
+        <section id="feedback" class="reviews2_section">
+            <h2 class="title">Відгуки покупців</h2>
+            <div class="reviews_stats_block">
+                <p><b>98%</b> покупців рекомендують цей товар</p>
+                <div class="line"></div>
+            </div>
+            <div class="reviews swiper">
+                <div class="swiper-wrapper">
+                    <div class="rev_item swiper-slide">
+                        <img alt="Позитивні відгуки на машинку для випікання пончиків" src="img/rev1.jpg" alt="">
+                    </div>
+                    <div class="rev_item swiper-slide">
+                        <img alt="Позитивні відгуки на машинку для випікання пончиків" src="img/rev2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- /reviews 2 -->
+        <!-- order steps 2 -->
+        <div class="order_steps_list1 clearfix">
+            <h2 class="title">Як замовити?</h2>
+            <div class="box">
+                <div class="step_item">
+                    <div class="number">1</div>
+                    <h4>Заявка</h4>
+                    <p>Залишаєте заявку на нашому сайті</p>
+                </div>
+                <div class="step_item">
+                    <div class="number">2</div>
+                    <h4>Дзвінок</h4>
+                    <p>Менеджер зателефонує для уточнення деталей</p>
+                    <p>Працюємо у вихідні! Замовляйте в будь-який час</p>
+                </div>
+                <div class="step_item">
+                    <div class="number">3</div>
+                    <h4>Надсилання</h4>
+                    <p>Доставляємо ваш товар протягом
+                        1-3
+                        днів</p>
+                </div>
+                <div class="step_item">
+                    <div class="number">4</div>
+                    <h4>Отримання</h4>
+                    <p>Оплачуєте при отриманні поштою</p>
+                </div>
+            </div>
+        </div>
+        <!-- result.php? steps 2 -->
+        <!-- order 3 -->
+        <section class="offer_section offer3">
+            <div class="title_block">
+            </div>
+            <div class="timer_block clearfix">
+                <p>Ця пропозиція закінчиться через:</p>
+                <div class="timer clearfix">
+                    <div class="timer_item">
+                        <div class="text">годин</div>
+                        <div class="count hours"></div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="text">хвилин</div>
+                        <div class="count minutes"></div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="text">секунд</div>
+                        <div class="count seconds"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="image_block">
+                <!-- <div class="box-title">
+                    <div class="text">Машинка для випікання пончиків</div>
+            </div> -->
+                <img class="offer_image" src="img/offer.jpg" alt="Машинка для випікання пончиків">
+                <div class="discount_block">
+                    <div class="value">-
+                        <?php echo  $sale?>%
+                    </div>
+                    <div class="text">знижка</div>
+                </div>
+            </div>
+            <div class="price_block clearfix">
+                <div class="price_item old">
+                    <div class="text">Звичайна ціна:</div>
+                    <div class="value">
+                        <?php echo  $price_old?>
+                        <?php echo  $currency?>
+                    </div>
+                </div>
+                <div class="price_item new">
+                    <div class="text"><span>Ви заощаджуєте -
+                            <?php echo  $sale?>%
+                        </span></div>
+                    <div class="value">
+                        <?php echo  $landing_price?>
+                        <?php echo  $currency?>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>Приготування до 7 пончиків одночасно</li>
+                <li>Антипригарна поверхня для випікання</li>
+                <li>Індикатор готовності</li>
+                <li>Легко миється</li>
+                <li>Зручна у використанні</li>
+                <li>Прогумовані ніжки</li>
+                <li>Безпечні та довговічні матеріали</li>
+            </ul>
+            <form id="order_form" class="order_form" action="result.php?<?php echo http_build_query($_GET); ?>" method="POST">
+                <br>
+                <div class="btn-block">
+                    <input class="field" type="text" name="name" placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="btn-block">
+                    <input class="field" type="tel" name="phone" minlength="8" maxlength="15"
+                        placeholder="Введіть Ваш телефон" required>
+                </div>
+                <div class="btn-block">
+                    <button class="button">Придбати зараз</button>
+                </div>
+                
+            <input type="hidden" name="sub1" value="{subid}" /></form>
+            <div class="products_count">* залишилось <b id="countLeft" style="background-color: rgba(247,147,29, 0.62);">18</b> шт за акцією</div>
+        </section>
+        <!-- result.php? 3 -->
+        <!-- footer -->
+        <footer class="footer_section">
+        <center> 
+            <p style="color: #fff;">ТОВ "ShokSale" проспект Дмитра Яворницького, 50, Дніпро, 49000 ЄДРПОУ 39729741</p>
+            <div>
+            <a style="color: #fff;" href="https://policy.deliverygoooods.com/ua/" >Політика конфіденційності</a>
+            <a style="color: #fff;" href="https://policy.deliverygoooods.com/ua/agreement.html" >Умови сайту</a>
+            <a style="color: #fff;" href="https://policy.deliverygoooods.com/ua/return.html" >Політика обміну та повернення</a>
+            </div>
+        </center>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!--/main_wrapper-->
+    <!-- scripts -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/previewYouTube.js"></script>
+    <script defer src="js/scripts.js"></script>
+
+
+    <script src="api.js"></script>
+<script async defer src="https://mtrkt.com/tracker/analytics.js"></script>
+
+    
+<!-- MTRKT -->
+<script async defer src="https://mtrkt.com/tracker/analytics.js"></script>
+<!-- END MTRKT -->
+</body>
+
+</html>
